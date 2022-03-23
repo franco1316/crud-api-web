@@ -1,0 +1,23 @@
+.form{
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    height: 200px;
+
+}
+
+.uf-button-add-new-user{
+    margin: 0 auto;
+}
+
+.uf-add-new-user{
+    font-family: var(--font-family-roboto);
+    font-size: var(--new-users-button-font-size);
+    font-weight: var(--new-users-button-font-weight);
+    color: var(--new-users-button-font-color);
+    background-color: var(--new-users-button-bg);
+}

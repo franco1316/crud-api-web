@@ -1,0 +1,82 @@
+.ul-layout{
+    width: 90%;
+    margin: 74px auto;
+}
+
+.ul-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.ul-box{
+    border: 1px solid #E5E5E5;
+    padding: 20px;
+    width: 381px;
+    min-height: 274px;
+    border-radius: 4px;
+    background-color: var(--color-users-box-user-bg);
+}
+
+.ul-separator{
+    border: 0.5px solid #E5E5E5;
+}
+
+.ul-user-name{
+    color: var(--color-users-title);
+    font: var(--font-family-source-sans-pro);
+    font-weight: var(--users-full-username-font-weight);
+    font-size: var(--users-full-username-font-size);
+}
+
+.ul-field{
+    color: var(--color-users-field);
+    font: var(--font-family-roboto);
+    font-weight: var(--users-field-font-weight);
+    font-size: var(--users-field-font-size);
+}
+
+.ul-info{
+    color: var(--color-users-info);
+    font: var(--font-family-source-sans-pro);
+    font-weight: var(--users-info-font-weight);
+    font-size: var(--users-info-font-size);
+}
+
+.ul-birthday{
+    display: flex;
+    align-items: center;
+}
+
+.ul-container-buttons{
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ul-all-end{
+    display: flex;
+    justify-content: end;
+}
+
+.ul-icon{
+    width: 70%;
+}
+
+.ul-container-edit{
+    background-color: var(--color-button-edit-bg);
+    border: 1px solid var(--color-button-edit-border);
+}
+
+.ul-edit{
+    filter: invert(85%);
+}
+
+.ul-container-delete{
+    background-color: var(--color-button-delete-bg);
+    border: 1px solid var(--color-button-delete-border);
+}
+
+.ul-delete{
+    filter: invert(100%);
+}

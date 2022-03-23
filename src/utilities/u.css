@@ -1,0 +1,32 @@
+.u-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.u-flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.u-button{
+    color: var(--color-button-color);
+    background-color: var(--color-button-bg);
+}
+
+.u-container-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.u-container-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 4px;
+}
+
+.u-icon{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}

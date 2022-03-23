@@ -1,0 +1,13 @@
+/* :root{
+    --develop-border-value: 1px groove gold;
+    --develop-app-bg: gray;
+    --develop-app-height: 100vh;
+}
+
+*{
+    border: var(--develop-border-value)
+}
+
+.App{
+    background-color: var(--develop-app-bg);
+} */

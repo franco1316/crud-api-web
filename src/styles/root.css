@@ -1,0 +1,143 @@
+:root{
+
+    /*-----------------------mains colors-----------------------*/
+    --color-users-bg: #E5E5E5;
+    --color-users-box-user-bg: #FFF;
+    --color-users-title: #0F0F2D;
+    --color-users-info: #302F2F;
+    --color-users-field: #D3D3D3;
+    --color-button-bg: #555A88;
+    --color-button-color: #FFF;
+    --color-button-edit-bg: #F6F6F6;
+    --color-button-delete-bg: #D85D5D;
+    --color-button-edit-border: #BDBDBD;
+    --color-button-delete-border: #D93F3F;
+    --color-place-holder-bg: #F9FAFC;
+    --color-place-holder-color: #BDBDBD;
+    --color-screen-effect-users-bg: #212121;
+    /*-----------------------mains colors-----------------------*/
+
+    /*-----------------------main-font-families-----------------------*/
+    --font-family-roboto: 'Roboto', sans-serif; 
+    --font-family-source-sans-pro: 'Source Sans Pro', sans-serif;/*para reemplazar a helvética neue busqué una similar*/
+    /*-----------------------main-font-families-----------------------*/
+
+
+    /*-------------------------Users-------------------------*/
+
+    /*--------------title--------------*/
+    --users-title-font-size: 50px;
+    --users--font-weight: 800, Bold;/*con 700 aun estaba muy delgada*/
+    /*--------------title--------------*/
+
+    /*--------------button--------------*/
+    --users-button-bg: var(--users-button-bg);
+    --users-button-font-color: var(--users-button-font-color);
+    --users-button-font-size: 16px;
+    --users-button-font-weight: 400, Regular;
+    /*--------------button--------------*/
+
+    /*--------------full-username--------------*/
+    --users-full-username-font-size: 25px;
+    --users-full-username-font-weight: 500, Medium;
+    /*--------------full-username--------------*/
+
+    /*--------------field--------------*/
+    --users-field-font-size: 16px;
+    --users-field-font-weight: 400, Regular;
+    /*--------------field--------------*/
+
+    /*--------------info--------------*/
+    --users-info-font-size: 16px;
+    --users-info-font-weight: 400, Regular;
+    /*--------------info--------------*/
+
+    /*-------------------------Users-------------------------*/
+
+
+    /*-------------------------New-Users-------------------------*/
+
+    /*--------------title--------------*/
+    --new-users-title-font-size: 32px;
+    --new-users-title-font-weight: 700, Bold;
+    /*--------------title--------------*/
+
+    /*--------------field--------------*/
+    --new-users-field-font-size: 16px;
+    --new-users-field-font-weight: 400, Regular;
+    /*--------------field--------------*/
+
+    /*--------------info--------------*/
+    --new-users-info-font-size: 16px;
+    --new-users-info-font-weight: 400, Regular;
+    /*--------------info--------------*/
+
+    /*--------------button--------------*/
+    --new-users-button-bg: var(--users-button-bg);
+    --new-users-button-font-color: var(--users-button-font-color);
+    --new-users-button-font-size: 16px;
+    --new-users-button-font-weight: 400, Regular;
+    /*--------------button--------------*/
+
+    /*-------------------------New-Users-------------------------*/
+
+
+    /*-------------------------Edit-Users-------------------------*/
+
+    /*--------------title--------------*/
+    --edit-users-title-font-size: 32px;
+    --edit-users-title-font-weight: 700, Bold;
+    /*--------------title--------------*/
+
+    /*--------------field--------------*/
+    --edit-users-field-font-size: 16px;
+    --edit-users-field-font-weight: 400, Regular;
+    /*--------------field--------------*/
+
+    /*--------------info--------------*/
+    --edit-users-info-font-size: 16px;
+    --edit-users-info-font-weight: 400, Regular;
+    /*--------------info--------------*/
+
+    /*--------------button--------------*/
+    --edit-users-button-bg: var(--users-button-bg);
+    --edit-users-button-font-color: var(--users-button-font-color);
+    --edit-users-button-font-size: 16px;
+    --edit-users-button-font-weight: 400, Regular;
+    /*--------------button--------------*/
+
+    /*-------------------------Edit-Users-------------------------*/
+
+
+    /*-------------------------Delete-Users-------------------------*/
+
+    /*--------------title--------------*/
+    --delelte-users-title-font-size: 32px;
+    --delelte-users-title-font-weight: 700, Bold;
+    /*--------------title--------------*/
+
+    /*--------------info--------------*/
+    --delelte-users-info-font-size: 16px;
+    --delelte-users-info-font-weight: 400, Regular;
+    /*--------------info--------------*/
+
+    /*--------------button--------------*/
+    --delelte-users-button-bg: var(--users-button-bg);
+    --delelte-users-button-font-color: var(--users-button-font-color);
+    --delelte-users-button-font-size: 16px;
+    --delelte-users-button-font-weight: 400, Regular;
+    /*--------------button--------------*/
+
+    /*-------------------------Delete-Users-------------------------*/
+
+
+    /*-------------border-users---------------*/
+    --users-border: 0.5px solid var(--color-users-bg);
+    --users-border-radius: 4px;
+    /*-------------border-users---------------*/
+
+    /*----------------Screen-Effect----------------*/
+    --screen-effect-users-bg: var(--screen-effect-users-bg);
+    --screen-effect-users-opacity: 0.3;
+    /*----------------Screen-Effect----------------*/
+}
