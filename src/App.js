@@ -50,6 +50,8 @@ function App() {
           onClick={()=>{
             setShowModule1(true)
             setShowCreate(true)
+            setShowEdit(false)
+            setShowDelete(false)
           }}
         >
           <p className='App-create-new-user-plus'>+{space}</p>
