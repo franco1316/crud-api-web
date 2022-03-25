@@ -3,13 +3,13 @@ import imgUpdate from '../Assets/write.png';
 import imgDelete from '../Assets/bin.png';
 import imgGift from '../Assets/gift.png';
 import '../styles/usersList.css'
-import u from '../utilities/u';
 import Module from './Module';
 
 const UsersList = ({users, getUsers, selectedUser, setSelectedUser, setShow}) => {
 
     const [showEdit, setShowEdit] = useState(false)
     const [showDelete, setShowDelete] = useState(false)
+    const space = '\u00A0';
 
     return (
         <div className="ul-layout">
@@ -48,7 +48,7 @@ const UsersList = ({users, getUsers, selectedUser, setSelectedUser, setShow}) =>
                                             </img>
                                         </div>
                                         <p className="ul-info">
-                                            {u.space} {user.birthday}
+                                            {space} {user.birthday}
                                         </p>
                                     </section>
                                 </ul>

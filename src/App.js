@@ -18,7 +18,6 @@ import UsersList from './components/UsersList';
 
 //utilities
 import './utilities/u.css';
-import u from './utilities/u';
 import Module from './components/Module';
 
 
@@ -29,6 +28,7 @@ function App() {
   const [showModule1, setShowModule1] = useState(false)
 
   const [showCreate, setShowCreate]=useState(false)
+  const space = '\u00A0';
 
 
   useEffect(() => {
@@ -50,7 +50,7 @@ function App() {
             setShowCreate(true)
           }}
         >
-          <p className='App-create-new-user-plus'>+{u.space}</p>
+          <p className='App-create-new-user-plus'>+{space}</p>
           <p className='App-create-new-user-text'>Create new user</p>
         </button>
       </section>
