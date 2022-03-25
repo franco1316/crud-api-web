@@ -26,6 +26,11 @@
     font-weight: var(--users-button-font-weight);
 }
 
+.App-button-create-new-user:hover{
+  cursor: pointer;
+  filter:brightness(1.2);
+}
+
 .App-create-new-user-plus{
     font-family: var(--font-family-open-sans);
     font-size: calc(var( --users-button-font-size) * 1.5);

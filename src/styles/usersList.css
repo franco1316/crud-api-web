@@ -64,10 +64,16 @@
     height: inherit;
     border-radius: inherit;
     position: relative;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.04);
     top: -32px;
     left: 0;
     z-index: 2;
+}
+
+.ul-container-icon-button:hover{
+    cursor: pointer;
+    filter: brightness(1);
+    background-color: transparent;
 }
 
 .ul-icon{
