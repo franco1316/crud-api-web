@@ -73,6 +73,7 @@ function App() {
         getUsers={getUsers} 
         selectedUser={selectedUser}
         setSelectedUser={setSelectedUser}
+        show={showModule1}
         setShow={setShowModule1}
       />
     </div>

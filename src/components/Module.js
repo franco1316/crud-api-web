@@ -16,6 +16,7 @@ const Module = ({
     selectedUser,
     setSelectedUser
 }) => {
+    
     return (
         <>
             <div className='bg-window'>
@@ -27,9 +28,7 @@ const Module = ({
                         
                     </header>
                     <button className='close'
-                        onClick={()=>{
-                            setShow(false)
-                        }}
+                        onClick={()=> setShow(false)}
                     >
                             X
                     </button>

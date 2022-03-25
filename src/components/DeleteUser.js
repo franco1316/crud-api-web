@@ -1,7 +1,14 @@
 import React from 'react';
 import UsersForm from './UsersForm';
 
-const DeleteUser = ({getUsers,selectedUser,setSelectedUser, setShow, showDelete, setShowDelete}) => {
+const DeleteUser = ({
+    getUsers,
+    selectedUser,
+    setSelectedUser,
+    setShow, 
+    showDelete, 
+    setShowDelete
+}) => {
     return (
         <div>
             <UsersForm

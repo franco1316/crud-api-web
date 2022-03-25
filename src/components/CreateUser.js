@@ -1,7 +1,14 @@
 import React from 'react';
 import UsersForm from './UsersForm';
 
-const CreateUser = ({getUsers,selectedUser,setSelectedUser, setShow, showCreate, setShowCreate}) => {
+const CreateUser = ({
+    getUsers,
+    selectedUser,
+    setSelectedUser, 
+    setShow, 
+    showCreate, 
+    setShowCreate
+}) => {
     return (
         <div>
             <UsersForm 

@@ -5,7 +5,7 @@ import imgGift from '../Assets/gift.png';
 import '../styles/usersList.css'
 import Module from './Module';
 
-const UsersList = ({users, getUsers, selectedUser, setSelectedUser, setShow}) => {
+const UsersList = ({users, getUsers, selectedUser, setSelectedUser, show, setShow}) => {
 
     const [showEdit, setShowEdit] = useState(false)
     const [showDelete, setShowDelete] = useState(false)
@@ -71,7 +71,7 @@ const UsersList = ({users, getUsers, selectedUser, setSelectedUser, setShow}) =>
                                         </div>
 
                                         {
-                                            showEdit &&
+                                            (show && showEdit) &&
                                             <Module
                                                 title="Edit user"
                                                 getUsers={getUsers}  
@@ -91,6 +91,7 @@ const UsersList = ({users, getUsers, selectedUser, setSelectedUser, setShow}) =>
                                             <button
                                                 onClick={()=>{
                                                     setSelectedUser([user, "delete"])
+                                                    setShow(true)
                                                     setShowDelete(true)
                                                 }}
                                                 className='ul-container-icon-button'>
@@ -98,7 +99,7 @@ const UsersList = ({users, getUsers, selectedUser, setSelectedUser, setShow}) =>
                                         </div>
 
                                         {
-                                            showDelete &&
+                                            (show &&  showDelete) &&
                                             <Module
                                                 title="Delete user"
                                                 getUsers={getUsers}  

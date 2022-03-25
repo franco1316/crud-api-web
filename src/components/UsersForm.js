@@ -84,7 +84,7 @@ const UsersForm = ({
         <form onSubmit={submit} className="form">
 
             {
-                (showCreate || showEdit) &&
+                (showCreate || showEdit) && (!showDelete) &&
                     <div>
                         <div className="input-container">
                             <label className='field' htmlFor="name">Name</label>
