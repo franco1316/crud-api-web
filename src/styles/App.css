@@ -1,5 +1,5 @@
 .App {
-  font-family: var(--font-family-source-sans-pro);
+  font-family: var(--font-family-open-sans);
 }
 
 .App-section-title{
@@ -11,7 +11,7 @@
 }
 
 .App-title{
-  font-family: var(--font-family-source-sans-pro);
+  font-family: var(--font-family-open-sans);
   font-size: var(--users-title-font-size);
   font-weight: var(--users--font-weight);
   color: var(--color-users-title);
@@ -27,7 +27,7 @@
 }
 
 .App-create-new-user-plus{
-    font-family: var(--font-family-source-sans-pro);
+    font-family: var(--font-family-open-sans);
     font-size: calc(var( --users-button-font-size) * 1.5);
 }
 

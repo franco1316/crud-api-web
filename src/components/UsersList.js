@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import imgUpdate from '../Assets/write.png';
 import imgDelete from '../Assets/bin.png';
 import imgGift from '../Assets/gift.png';
 import '../styles/usersList.css'
 import u from '../utilities/u';
+import Module from './Module';
 
-const UsersList = ({users, setSelectedUser}) => {
+const UsersList = ({users, getUsers, selectedUser, setSelectedUser, setShow}) => {
+
+    const [showEdit, setShowEdit] = useState(false)
+    const [showDelete, setShowDelete] = useState(false)
+
     return (
         <div className="ul-layout">
             <article className='ul-grid'>
@@ -50,22 +55,61 @@ const UsersList = ({users, setSelectedUser}) => {
                                 <hr className='ul-separator'/>
                                 <ul className='ul-all-end'>
                                     <div className='ul-container-buttons'>
-                                        <button
-                                            onClick={()=>setSelectedUser([user, "put"])}
-                                            className='u-container-icon ul-container-edit'>
-                                                <img
-                                                    src={imgUpdate} alt="Update"
-                                                    className='ul-icon ul-edit'
-                                                />
-                                        </button>
-                                        <button
-                                            onClick={()=>setSelectedUser([user, "delete"])}
-                                            className='u-container-icon ul-container-delete'>
-                                                <img
-                                                    src={imgDelete} alt="delete"
-                                                    className='ul-icon ul-delete'
-                                                />
-                                        </button>
+                                        <div className="u-container-icon ul-container-edit">
+                                            <img
+                                                src={imgUpdate} alt="Update"
+                                                className='ul-icon ul-edit'
+                                            />
+                                            <button
+                                                onClick={()=>{
+                                                    setSelectedUser([user, "put"])
+                                                    setShow(true)
+                                                    setShowEdit(true)
+                                                }}
+                                                className='ul-container-icon-button'>
+                                            </button>
+                                        </div>
+
+                                        {
+                                            showEdit &&
+                                            <Module
+                                                title="Edit user"
+                                                getUsers={getUsers}  
+                                                selectedUser={selectedUser}
+                                                setSelectedUser={setSelectedUser}
+                                                setShow={setShow}
+                                                showEdit={showEdit}
+                                                setShowEdit={setShowEdit}
+                                            />
+                                        }
+
+                                        <div className="u-container-icon ul-container-delete">
+                                            <img
+                                                src={imgDelete} alt="delete"
+                                                className='ul-icon ul-delete'
+                                            />
+                                            <button
+                                                onClick={()=>{
+                                                    setSelectedUser([user, "delete"])
+                                                    setShowDelete(true)
+                                                }}
+                                                className='ul-container-icon-button'>
+                                            </button>
+                                        </div>
+
+                                        {
+                                            showDelete &&
+                                            <Module
+                                                title="Delete user"
+                                                getUsers={getUsers}  
+                                                selectedUser={selectedUser}
+                                                setSelectedUser={setSelectedUser}
+                                                setShow={setShow}
+                                                showDelete={showDelete}
+                                                setShowDelete={setShowDelete}
+                                            />
+                                        }
+
                                     </div>
                                 </ul>
                             </li>
@@ -74,6 +118,7 @@ const UsersList = ({users, setSelectedUser}) => {
                 }
             </article>
         </div>
+            
     );
 };
 

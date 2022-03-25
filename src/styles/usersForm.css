@@ -1,6 +1,6 @@
 .form{
     width: 90%;
-    margin: 50px auto;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -11,13 +11,45 @@
 }
 
 .uf-button-add-new-user{
-    margin: 0 auto;
-}
-
-.uf-add-new-user{
+    width: 355px;
+    height: 45px;
     font-family: var(--font-family-roboto);
     font-size: var(--new-users-button-font-size);
     font-weight: var(--new-users-button-font-weight);
     color: var(--new-users-button-font-color);
     background-color: var(--new-users-button-bg);
+}
+
+.uf-add-new-user{
+    
+}
+
+.input-container{
+    margin: 16px 0;
+}
+
+.field{
+    display: flex;
+    color: var(--color-user-field);
+    font-family: var(--font-family-roboto);
+    font-size: var(--new-users-field-font-size);
+    font-weight: var(--new-users-field-font-weight)
+}
+
+.placeholder{
+    display: flex;
+    text-align: center;
+    border: 1px solid var(--color-place-holder-border-color);
+    background-color: var(--color-place-holder-bg-color);
+    height: 40px;
+    width: 355px;
+    border-radius: 6px;
+    color: var(--color-info-color);
+}
+.info{
+    background-color: inherit;
+    color: inherit;
+    width: inherit;
+    position: relative;
+    z-index: 1;
 }

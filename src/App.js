@@ -3,6 +3,7 @@ import './styles/root.css';
 import './styles/resetStyles.css';
 
 import './styles/App.css';
+import './styles/module.css';
 
 import './styles/develop.css'
 
@@ -14,19 +15,21 @@ import axios from 'axios';
 
 //components
 import UsersList from './components/UsersList';
-import UsersForm from './components/UsersForm';
-import CreateUser from './components/CreateUser';
 
 //utilities
 import './utilities/u.css';
 import u from './utilities/u';
+import Module from './components/Module';
 
 
 function App() {
 
   const [users, setUsers] = useState([]);
   const [selectedUser, setSelectedUser] = useState([])
-  const [color, setColor] = useState("true")
+  const [showModule1, setShowModule1] = useState(false)
+
+  const [showCreate, setShowCreate]=useState(false)
+
 
   useEffect(() => {
     getUsers()
@@ -38,24 +41,39 @@ function App() {
   }
 
   return (
-    <div className={`App ${color?'bg-light':'bg-dark'} `}>
+    <div className='App'>
       <section className='App-section-title'>
         <h1 className='App-title'>Users</h1>
-        <button className='u-button App-button-create-new-user'>
+        <button className='u-button App-button-create-new-user'
+          onClick={()=>{
+            setShowModule1(true)
+            setShowCreate(true)
+          }}
+        >
           <p className='App-create-new-user-plus'>+{u.space}</p>
           <p className='App-create-new-user-text'>Create new user</p>
         </button>
       </section>
-      
+
+      {
+        showModule1 &&
+        <Module 
+          title="New User" 
+          setShow={setShowModule1}
+          getUsers={getUsers} 
+          selectedUser={selectedUser}
+          setSelectedUser={setSelectedUser}
+          showCreate={showCreate}
+          setShowCreate={setShowCreate}
+        />
+      }
+
       <UsersList 
         users={users} 
-        setSelectedUser={setSelectedUser}
-      />
-
-      <CreateUser
         getUsers={getUsers} 
         selectedUser={selectedUser}
         setSelectedUser={setSelectedUser}
+        setShow={setShowModule1}
       />
     </div>
   );

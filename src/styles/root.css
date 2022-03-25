@@ -5,6 +5,7 @@
     --color-users-box-user-bg: #FFF;
     --color-users-title: #0F0F2D;
     --color-users-info: #302F2F;
+    --color-user-field: #000;
     --color-users-field: #D3D3D3;
     --color-button-bg: #555A88;
     --color-button-color: #FFF;
@@ -14,12 +15,14 @@
     --color-button-delete-border: #D93F3F;
     --color-place-holder-bg: #F9FAFC;
     --color-place-holder-color: #BDBDBD;
-    --color-screen-effect-users-bg: #212121;
+    --color-place-holder-border-color: #C3C1C1;
+    --color-place-holder-bg-color: #F9FAFC;
+    --color-info-color: #BDBDBD;
     /*-----------------------mains colors-----------------------*/
 
     /*-----------------------main-font-families-----------------------*/
     --font-family-roboto: 'Roboto', sans-serif; 
-    --font-family-source-sans-pro: 'Source Sans Pro', sans-serif;/*para reemplazar a helvética neue busqué una similar*/
+    --font-family-open-sans: 'Open Sans', sans-serif;
     /*-----------------------main-font-families-----------------------*/
 
 
@@ -27,12 +30,12 @@
 
     /*--------------title--------------*/
     --users-title-font-size: 50px;
-    --users--font-weight: 800, Bold;/*con 700 aun estaba muy delgada*/
+    --users--font-weight: 700, Bold;
     /*--------------title--------------*/
 
     /*--------------button--------------*/
-    --users-button-bg: var(--users-button-bg);
-    --users-button-font-color: var(--users-button-font-color);
+    --users-button-bg: var(--color-button-bg);
+    --users-button-font-color: var(--color-button-color);
     --users-button-font-size: 16px;
     --users-button-font-weight: 400, Regular;
     /*--------------button--------------*/

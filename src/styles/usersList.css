@@ -24,7 +24,7 @@
 
 .ul-user-name{
     color: var(--color-users-title);
-    font: var(--font-family-source-sans-pro);
+    font: var(--font-family-open-sans);
     font-weight: var(--users-full-username-font-weight);
     font-size: var(--users-full-username-font-size);
 }
@@ -38,7 +38,7 @@
 
 .ul-info{
     color: var(--color-users-info);
-    font: var(--font-family-source-sans-pro);
+    font: var(--font-family-open-sans);
     font-weight: var(--users-info-font-weight);
     font-size: var(--users-info-font-size);
 }
@@ -56,7 +56,18 @@
 
 .ul-all-end{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
+}
+
+.ul-container-icon-button{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    position: relative;
+    background-color: transparent;
+    top: -32px;
+    left: 0;
+    z-index: 2;
 }
 
 .ul-icon{
@@ -70,6 +81,9 @@
 
 .ul-edit{
     filter: invert(85%);
+    position: relative;
+    top: 6px;
+    left: 6px;
 }
 
 .ul-container-delete{
@@ -79,4 +93,7 @@
 
 .ul-delete{
     filter: invert(100%);
+    position: relative;
+    top: 6px;
+    left: 6px;
 }
