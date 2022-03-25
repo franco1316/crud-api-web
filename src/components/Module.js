@@ -29,7 +29,6 @@ const Module = ({
                     <button className='close'
                         onClick={()=>{
                             setShow(false)
-                            setShowCreate(false)
                         }}
                     >
                             X
