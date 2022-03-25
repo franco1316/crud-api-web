@@ -28,6 +28,8 @@ function App() {
   const [showModule1, setShowModule1] = useState(false)
 
   const [showCreate, setShowCreate]=useState(false)
+  const [showEdit, setShowEdit] = useState(false)
+  const [showDelete, setShowDelete] = useState(false)
   const space = '\u00A0';
 
 
@@ -65,6 +67,8 @@ function App() {
           setSelectedUser={setSelectedUser}
           showCreate={showCreate}
           setShowCreate={setShowCreate}
+          setShowEdit={setShowEdit}
+          setShowDelete={setShowDelete}
         />
       }
 
@@ -75,6 +79,11 @@ function App() {
         setSelectedUser={setSelectedUser}
         show={showModule1}
         setShow={setShowModule1}
+        setShowCreate={setShowCreate}
+        showEdit={showEdit}
+        setShowEdit={setShowEdit}
+        showDelete={showDelete}
+        setShowDelete={setShowDelete}
       />
     </div>
   );

@@ -28,7 +28,9 @@ const Module = ({
                         
                     </header>
                     <button className='close'
-                        onClick={()=> setShow(false)}
+                        onClick={()=> {
+                            setShow(false)
+                        }}
                     >
                             X
                     </button>

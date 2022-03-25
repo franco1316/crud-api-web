@@ -1,14 +1,23 @@
-import React, { useState } from 'react';
 import imgUpdate from '../Assets/write.png';
 import imgDelete from '../Assets/bin.png';
 import imgGift from '../Assets/gift.png';
 import '../styles/usersList.css'
 import Module from './Module';
 
-const UsersList = ({users, getUsers, selectedUser, setSelectedUser, show, setShow}) => {
+const UsersList = ({
+    users, 
+    getUsers, 
+    selectedUser, 
+    setSelectedUser, 
+    show, 
+    setShow, 
+    setShowCreate, 
+    showEdit, 
+    setShowEdit, 
+    showDelete, 
+    setShowDelete
+}) => {
 
-    const [showEdit, setShowEdit] = useState(false)
-    const [showDelete, setShowDelete] = useState(false)
     const space = '\u00A0';
 
     return (
@@ -64,7 +73,9 @@ const UsersList = ({users, getUsers, selectedUser, setSelectedUser, show, setSho
                                                 onClick={()=>{
                                                     setSelectedUser([user, "put"])
                                                     setShow(true)
+                                                    setShowCreate(false)
                                                     setShowEdit(true)
+                                                    setShowDelete(false)
                                                 }}
                                                 className='ul-container-icon-button'>
                                             </button>
@@ -92,6 +103,8 @@ const UsersList = ({users, getUsers, selectedUser, setSelectedUser, show, setSho
                                                 onClick={()=>{
                                                     setSelectedUser([user, "delete"])
                                                     setShow(true)
+                                                    setShowCreate(false)
+                                                    setShowEdit(false)
                                                     setShowDelete(true)
                                                 }}
                                                 className='ul-container-icon-button'>
