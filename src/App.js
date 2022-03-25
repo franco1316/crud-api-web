@@ -43,7 +43,7 @@ function App() {
   return (
     <div className='App'>
       <section className='App-section-title'>
-        <h1 className='App-title'>Users</h1>
+        <h1 className='App-title'><b>Users</b></h1>
         <button className='u-button App-button-create-new-user'
           onClick={()=>{
             setShowModule1(true)

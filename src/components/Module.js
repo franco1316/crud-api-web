@@ -22,7 +22,7 @@ const Module = ({
                 <div className='window'>
                     <header className='header'>
                         <h2 className='window-title'>
-                            {title}
+                            <b>{title}</b>
                         </h2>
                         
                     </header>
@@ -30,8 +30,6 @@ const Module = ({
                         onClick={()=>{
                             setShow(false)
                             setShowCreate(false)
-                            setShowEdit(false)
-                            setShowDelete(false)
                         }}
                     >
                             X

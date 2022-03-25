@@ -161,8 +161,12 @@ const UsersForm = ({
             {
                 showDelete && 
                     <div>
-                        <h3>
-                            {content1} {selectedUser[0].first_name} {selectedUser[0].last_name} {content2}
+                        <h3 className='uf-user-delete'>
+                            {content1} 
+                                <b>
+                                    {selectedUser[0].first_name} {selectedUser[0].last_name}
+                                </b>
+                             {content2}
                         </h3>
                     </div>
             }

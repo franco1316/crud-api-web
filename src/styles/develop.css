@@ -1,4 +1,4 @@
-/* :root{
+:root{
     --develop-border-value: 1px groove gold;
     --develop-app-bg: gray;
     --develop-app-height: 100vh;
@@ -10,4 +10,4 @@
 
 .App{
     background-color: var(--develop-app-bg);
-} */
+}
