@@ -54,6 +54,10 @@ const UsersForm = ({
         }
     }, [selectedUser]);
 
+    useEffect(() => {
+        getUsers()
+      }, []);
+
     const submit = (e) => {
         e.preventDefault()
         if(selectedUser){
