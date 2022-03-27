@@ -53,7 +53,6 @@ const UsersForm = ({
                 setBirthday(selectedUser[0].birthday)
             }
         }
-        getUsers()
     }, [selectedUser]);
 
     const submit = (e) => {
