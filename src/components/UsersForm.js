@@ -54,37 +54,33 @@ const UsersForm = ({
         }
     }, [selectedUser]);
 
-    useEffect(() => {
-        getUsers()
-      }, []);
-
     const submit = (e) => {
         e.preventDefault()
         if(selectedUser){
             if(selectedUser[1]==="put"){
                 axios.put(`https://users-crud1.herokuapp.com/users/${selectedUser[0].id}/`, user)
                 .then(()=>{
-                    getUsers()
                     empty()
                     setSelectedUser([])
                     setShowEdit(false)
+                    getUsers()
                 })
             }else if(selectedUser[1]==="delete"){
                 axios.delete(`https://users-crud1.herokuapp.com/users/${selectedUser[0].id}/`, user)
-                .then(()=>getUsers())
+                .then(()=>{
                 setSelectedUser([])
                 setShowDelete(false)
+                getUsers()
+                })
             }else{
                 axios.post('https://users-crud1.herokuapp.com/users/', user)
                 .then(() => {
-                    getUsers()
                     empty()
                     setShowCreate(false)
+                    getUsers()
                 })}
-            
             setShow(false)
         }
-        
         }
 
     
