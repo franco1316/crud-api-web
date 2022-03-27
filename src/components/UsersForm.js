@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import '../styles/usersForm.css';
 
 const UsersForm = ({
-    setUsers,
     getUsers, 
     selectedUser, 
     setSelectedUser, 
@@ -67,8 +66,8 @@ const UsersForm = ({
                     setShowEdit(false)
                 })
             }else if(selectedUser[1]==="delete"){
-                axios.delete(`https://users-crud1.herokuapp.com/users/${selectedUser[0].id}/`, user).
-                then(()=>getUsers())
+                axios.delete(`https://users-crud1.herokuapp.com/users/${selectedUser[0].id}/`, user)
+                .then(()=>getUsers())
                 setSelectedUser([])
                 setShowDelete(false)
             }else{

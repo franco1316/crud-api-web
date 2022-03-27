@@ -2,7 +2,6 @@ import React from 'react';
 import UsersForm from './UsersForm';
 
 const EditUser = ({
-    users,
     getUsers,
     selectedUser,
     setSelectedUser, 
@@ -13,7 +12,6 @@ const EditUser = ({
     return (
         <div>
             <UsersForm 
-                setUsers={users}
                 getUsers={getUsers} 
                 selectedUser={selectedUser}
                 setSelectedUser={setSelectedUser}

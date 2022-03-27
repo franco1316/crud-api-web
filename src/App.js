@@ -62,7 +62,6 @@ function App() {
       {
         showModule1 &&
         <Module 
-          users={setUsers}
           title="New User" 
           setShow={setShowModule1}
           getUsers={getUsers} 

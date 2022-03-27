@@ -2,7 +2,6 @@ import React from 'react';
 import UsersForm from './UsersForm';
 
 const DeleteUser = ({
-    users,
     getUsers,
     selectedUser,
     setSelectedUser,
@@ -13,7 +12,6 @@ const DeleteUser = ({
     return (
         <div>
             <UsersForm
-                 setUsers={users}
                  title="Delete User"
                  setShow={setShow}
                  getUsers={getUsers}
