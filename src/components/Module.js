@@ -4,6 +4,7 @@ import DeleteUser from './DeleteUser';
 import EditUser from './EditUser';
 
 const Module = ({
+    users,
     title,
     setShow,
     showCreate,
@@ -38,6 +39,7 @@ const Module = ({
                     {   
                         showCreate &&
                             <CreateUser
+                                users={users}
                                 getUsers={getUsers} 
                                 selectedUser={selectedUser}
                                 setSelectedUser={setSelectedUser}
@@ -50,6 +52,7 @@ const Module = ({
                     {
                         showEdit &&
                             <EditUser
+                                users={users}
                                 getUsers={getUsers} 
                                 selectedUser={selectedUser}
                                 setSelectedUser={setSelectedUser}
@@ -62,6 +65,7 @@ const Module = ({
                     {
                         showDelete &&
                             <DeleteUser
+                                users={users}
                                 getUsers={getUsers} 
                                 selectedUser={selectedUser}
                                 setSelectedUser={setSelectedUser}

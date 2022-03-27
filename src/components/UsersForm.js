@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import '../styles/usersForm.css';
 
 const UsersForm = ({
+    setUsers,
     getUsers, 
     selectedUser, 
     setSelectedUser, 
@@ -52,6 +53,7 @@ const UsersForm = ({
                 setBirthday(selectedUser[0].birthday)
             }
         }
+        getUsers()
     }, [selectedUser]);
 
     const submit = (e) => {
@@ -60,23 +62,27 @@ const UsersForm = ({
             if(selectedUser[1]==="put"){
                 axios.put(`https://users-crud1.herokuapp.com/users/${selectedUser[0].id}/`, user)
                 .then(()=>{
+                    getUsers()
                     empty()
                     setSelectedUser([])
                     setShowEdit(false)
                 })
             }else if(selectedUser[1]==="delete"){
-                axios.delete(`https://users-crud1.herokuapp.com/users/${selectedUser[0].id}/`, user)
+                axios.delete(`https://users-crud1.herokuapp.com/users/${selectedUser[0].id}/`, user).
+                then(()=>getUsers())
                 setSelectedUser([])
                 setShowDelete(false)
             }else{
                 axios.post('https://users-crud1.herokuapp.com/users/', user)
                 .then(() => {
+                    getUsers()
                     empty()
                     setShowCreate(false)
                 })}
-            getUsers()
+            
             setShow(false)
         }
+        
         }
 
     
