@@ -33,9 +33,7 @@ function App() {
   const space = '\u00A0';
 
 
-  useEffect(() => {
-    getUsers()
-  }, []);
+  useEffect(() => getUsers(), []);
 
   const getUsers = () =>{
     axios.get("https://users-crud1.herokuapp.com/users/")

@@ -6,13 +6,13 @@ import EditUser from './EditUser';
 const Module = ({
     title,
     setShow,
+    getUsers,
     showCreate,
     setShowCreate,
     showEdit,
     setShowEdit,
     showDelete,
     setShowDelete,
-    getUsers,
     selectedUser,
     setSelectedUser
 }) => {
@@ -50,7 +50,7 @@ const Module = ({
                     {
                         showEdit &&
                             <EditUser
-                                getUsers={getUsers} 
+                                getUsers={getUsers}  
                                 selectedUser={selectedUser}
                                 setSelectedUser={setSelectedUser}
                                 setShow={setShow}

@@ -12,7 +12,7 @@ const EditUser = ({
     return (
         <div>
             <UsersForm 
-                getUsers={getUsers} 
+                getUsers={getUsers}  
                 selectedUser={selectedUser}
                 setSelectedUser={setSelectedUser}
                 button={"Save changes"}
